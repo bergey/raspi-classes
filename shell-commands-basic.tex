@@ -3,7 +3,7 @@
 
 \documentclass{article}
 \pagestyle{empty}		% no page numbers, thanks.
-\usepackage[top=1in,bottom=1in,left=1.5in,right=0.7in]{geometry}
+\usepackage[top=0.7in,bottom=0.7in,left=0.7in,right=0.7in]{geometry}
 
 \usepackage{setspace}
 \setstretch{1.1}
@@ -12,7 +12,7 @@
 %% \usepackage{fontspec}
 
 \usepackage{tabularx}
-\setlength{\extrarowheight}{4\baselineskip}
+\setlength{\extrarowheight}{2.5\baselineskip}
 \usepackage{ragged2e}
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 \usepackage{booktabs}
@@ -22,19 +22,19 @@
 
 \section{Common Linux Shell Commands}
 
-\begin{tabularx}{\textwidth}{@{} c Y Y @{}}
+\begin{tabularx}{\textwidth}{@{} Y Y Y @{}}
   Command & Description & Notes \\
   \midrule
-  {\tt ls} & list files \& folders in current folder & \\
-  {\tt edit FILE \\ edit hello.py} & open FILE in the editor on your Mac & \\
-  {\tt python} & start Python in interactive mode & \\
-  {\tt python PROGRAM \\ python hello.py} & run the python PROGRAM & \\
-  {\tt cd DIR \\ cd inventwithpython} & change directory (folder) to DIR & \\
-  {\tt cd} & without DIR, go back to your {\tt HOME} directory & \\
-  {\tt rm FILE \\ rm whoops.txt} & remove (delete) FILE.  This is permanent! & \\
-  {\tt mv FROM TO \\ mv hello.py last-week/ } & rename a file or move it to another folder & \\
-  {\tt pwd} & {print working directory \\ show the full name of the current folder} & \\
-  {\tt ssh USER@ADDRESS \\ ssh fluttershy@raspi0} & login to another computer & \\
+   ls & list files \& folders in current folder & \\
+   edit FILE \newline edit hello.py & open FILE in the editor on your Mac & \\
+   python & start Python in interactive mode & \\
+   python PROGRAM \newline python hello.py & run the python PROGRAM & \\
+   cd DIR \newline cd inventwithpython & change directory (folder) to DIR & \\
+   cd & without DIR, go back to your  HOME directory & \\
+   rm FILE \newline rm whoops.txt & remove (delete) FILE.  This is permanent! & \\
+   mv FROM TO \newline mv hello.py last-week/  & rename a file or move it to another folder & \\
+   pwd & print working directory \newline show the full name of the current folder & \\
+   ssh USER@ADDRESS \newline ssh fluttershy@raspi0 & login to another computer & \\
 \end{tabularx}
  
 \end{document}
