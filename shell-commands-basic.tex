@@ -12,7 +12,7 @@
 %% \usepackage{fontspec}
 
 \usepackage{tabularx}
-\setlength{\extrarowheight}{2.5\baselineskip}
+\setlength{\extrarowheight}{2.3\baselineskip}
 \usepackage{ragged2e}
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 \usepackage{booktabs}
@@ -25,16 +25,18 @@
 \begin{tabularx}{\textwidth}{@{} Y Y Y @{}}
   Command & Description & Notes \\
   \midrule
+   ssh USER@ADDRESS \newline ssh fluttershy@raspi0 & login to another computer & \\
    ls & list files \& folders in current folder & \\
    edit FILE \newline edit hello.py & open FILE in the editor on your Mac & \\
    python & start Python in interactive mode & \\
    python PROGRAM \newline python hello.py & run the python PROGRAM & \\
    cd DIR \newline cd inventwithpython & change directory (folder) to DIR & \\
-   cd & without DIR, go back to your  HOME directory & \\
-   rm FILE \newline rm whoops.txt & remove (delete) FILE.  This is permanent! & \\
+   cd & go back to your  HOME directory & \\
+   rm FILE \newline rm whoops.txt & remove (delete) FILE.  \newline This is permanent! & \\
    mv FROM TO \newline mv hello.py last-week/  & rename a file or move it to another folder & \\
    pwd & print working directory \newline show the full name of the current folder & \\
-   ssh USER@ADDRESS \newline ssh fluttershy@raspi0 & login to another computer & \\
+   mkdir & make a new directory & \\
+   nano FILE \newline nano hello.py & open FILE in an editor in Terminal \newline Can be helpful if edit isn't set up correctly. & \\
 \end{tabularx}
  
 \end{document}
