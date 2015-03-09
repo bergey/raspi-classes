@@ -8,6 +8,8 @@ Handouts & other materials for a class on Python and the Raspberry Pi.
 
 [Shell Commands - Talking to Linux](http://bergey.s3.amazonaws.com/raspi/shell-commands-basic.pdf)
 
+[Boolean Logic - Numeric Comparisons, Boolean and / or](http://bergey.s3.amazonaws.com/raspi/boolean-tables.pdf)
+
 # Textbook - Invent With Python
 
 [http://inventwithpython.com/](http://inventwithpython.com/)
