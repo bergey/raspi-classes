@@ -1,0 +1,69 @@
+%% © Daniel Bergey 2015
+%% CC-BY
+
+\documentclass{article}
+\pagestyle{empty}		% no page numbers, thanks.
+\usepackage[top=0.7in,bottom=0.7in,left=0.7in,right=0.7in]{geometry}
+
+\usepackage{setspace}
+\setstretch{1.1}
+\parskip=0.15em
+
+\usepackage{listings}
+%% \usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\lstset{language=Python,showstringspaces=false,upquote=true}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks, urlcolor=red} % Set link colors
+%%\newcommand\url[1]{\href{#1}{#1}}
+
+%% \usepackage{tabularx}
+%% \setlength{\extrarowheight}{1\baselineskip}
+%% \usepackage{ragged2e}
+%% \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\usepackage{booktabs}
+
+\newcommand\And{\textbf{and} }
+\newcommand\Or{\textbf{or} }
+
+\begin{document}
+
+\section{Comparisons in Python}
+
+In the code below, fill in each of the ?? sections with one of the comparison operators:   $<$, $>$, $<=$, $>=$, $==$, or $!=$.
+
+If you don't feel like typing in all the code below, you can copy it from \url{https://github.com/bergey/raspi-classes/python-examples/week4/numeric.py}
+
+\begin{lstlisting}
+print("Enter a number between 1 and 100")
+x = input()
+if x ?? 100:
+    print("That number is too big!")
+elif x ?? 1:
+    print("That number is too small!")
+else:
+    print("{} is a good number.".format(x))  
+\end{lstlisting}
+
+In the next section of code, fill in the ?? sections with a comparison operator or a number.
+
+\begin{lstlisting}
+print("Enter a number between 7 and 72.")
+y = input()
+if y ?? ??:
+    print("That number is too big!")
+elif y ?? ??:
+    print("That number is too small!")
+else:
+    print("{} is a good number.".format(y))
+\end{lstlisting}
+
+When you want to use multiple comparisons in a \textbf{if} or \textbf{while} condition, you can combine them with \And or \Or.  In the code below, fill in each ?? with \And or \Or.
+
+If you don't feel like typing in all the code below, you can copy it from \url{https://github.com/bergey/raspi-classes/python-examples/week4/and-or.py}
+
+\lstinputlisting{../python-examples/week4/and-or.py}
+
+This document is available at: \url{https://github.com/bergey/raspi-classes/} as \textsc{pdf} and \LaTeX\ source.  
+\end{document}
