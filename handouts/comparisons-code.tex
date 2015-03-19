@@ -10,9 +10,8 @@
 \parskip=0.15em
 
 \usepackage{listings}
-%% \usepackage[T1]{fontenc}
-\usepackage{textcomp}
-\lstset{language=Python,showstringspaces=false,upquote=true,xleftmargin=3em}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\lstset{language=Python,showstringspaces=false,xleftmargin=3em,keywordstyle=\bf,basicstyle=\ttfamily,stringstyle=\color{Gray}}
 
 \usepackage{hyperref}
 \hypersetup{colorlinks, urlcolor=red} % Set link colors
@@ -36,29 +35,11 @@ In the code below, fill in each of the ?? sections with one of the comparison op
 
 If you don't feel like typing in all the code below, you can copy it from \url{https://github.com/bergey/raspi-classes/python-examples/week4/numeric.py}
 
-\begin{lstlisting}
-print("Enter a number between 1 and 100")
-x = input()
-if x ?? 100:
-    print("That number is too big!")
-elif x ?? 1:
-    print("That number is too small!")
-else:
-    print("{} is a good number.".format(x))  
-\end{lstlisting}
+\lstinputlisting{../python-examples/week4/numeric.py}
 
 In the next section of code, fill in the ?? sections with a comparison operator or a number.
 
-\begin{lstlisting}
-print("Enter a number between 7 and 72.")
-y = input()
-if y ?? ??:
-    print("That number is too big!")
-elif y ?? ??:
-    print("That number is too small!")
-else:
-    print("{} is a good number.".format(y))
-\end{lstlisting}
+\lstinputlisting{../python-examples/week4/numeric2.py}
 
 When you want to use multiple comparisons in a \textbf{if} or \textbf{while} condition, you can combine them with \And or \Or.  In the code below, fill in each ?? with \And or \Or.
 
