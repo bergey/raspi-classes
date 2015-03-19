@@ -5,6 +5,10 @@
 \pagestyle{empty}		% no page numbers, thanks.
 \usepackage[top=0.7in,bottom=0.7in,left=0.7in,right=0.7in]{geometry}
 
+\usepackage{ccicons}
+\usepackage{hyperref}
+\setlength{\parindent}{0em}
+
 \usepackage{setspace}
 \setstretch{1.1}
 \parskip=0.15em
@@ -12,15 +16,13 @@
 %% \usepackage{fontspec}
 
 \usepackage{tabularx}
-\setlength{\extrarowheight}{2.3\baselineskip}
+\setlength{\extrarowheight}{2\baselineskip}
 \usepackage{ragged2e}
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 \usepackage{booktabs}
 
 \begin{document}
-%% \setmainfont{TeX Gyre Pagella}
-
-\section{Common Linux Shell Commands}
+\subsection*{Common Linux Shell Commands:}
 
 \begin{tabularx}{\textwidth}{@{} Y Y Y @{}}
   Command & Description & Notes \\
@@ -38,5 +40,7 @@
    mkdir & make a new directory & \\
    nano FILE \newline nano hello.py & open FILE in an editor in Terminal \newline Can be helpful if edit isn't set up correctly. & \\
 \end{tabularx}
- 
+
+This document is available at: \url{https://github.com/bergey/raspi-classes/} as \textsc{pdf} and \LaTeX\ source.\\
+\ccby \ This work is licensed under a Creative Commons Attribution 4.0 International License.
 \end{document}

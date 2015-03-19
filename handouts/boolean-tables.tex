@@ -11,16 +11,17 @@
 
 \usepackage{listings}
 \usepackage{textcomp}
-\lstset{language=Python,showstringspaces=false,upquote=true,xleftmargin=3em}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\lstset{language=Python,showstringspaces=false,xleftmargin=3em,keywordstyle=\bf,basicstyle=\ttfamily,stringstyle=\color{Gray}}
+
+\usepackage{ccicons}
+\setlength{\parindent}{0em}
 
 \usepackage{hyperref}
 \hypersetup{colorlinks, urlcolor=red} % Set link colors
 %%\newcommand\url[1]{\href{#1}{#1}}
 
 %% \usepackage{tabularx}
-%% \setlength{\extrarowheight}{1\baselineskip}
-%% \usepackage{ragged2e}
-%% \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 \usepackage{booktabs}
 
 \newcommand\And{\textbf{and} }
@@ -28,9 +29,9 @@
 
 \begin{document}
 
-\section{Boolean Logic}
+\section*{Boolean Logic}
 
-\subsection{Comparisons}
+\subsection*{Comparisons}
 
 Numbers can be compared by the following \textbf{operators}:
 
@@ -47,13 +48,13 @@ Numbers can be compared by the following \textbf{operators}:
 \end{tabular}
 \end{center}
 
-\subsection{Multiple Comparisons}
+\subsection*{Multiple Comparisons}
 
 When you want to use multiple comparisons in a \textbf{if} or \textbf{while} condition, you can combine them with \And or \Or, like this:
 
 \begin{lstlisting}[language=Python]
   if x > 0 and x < 100:
-    print(`that's a good guess')
+    print("that's a good guess")
 \end{lstlisting}
 
 \And is true if the conditions on both sides are true.  \Or is true if either of the conditions are true.  These tables have all the details:
@@ -76,5 +77,6 @@ When you want to use multiple comparisons in a \textbf{if} or \textbf{while} con
   \end{tabular}
 \end{center}
 
-This document is available at: \url{https://github.com/bergey/raspi-classes} as \textsc{pdf} and \LaTeX\ source.
+This document is available at: \url{https://github.com/bergey/raspi-classes/} as \textsc{pdf} and \LaTeX\ source.\\
+\ccby \ This work is licensed under a Creative Commons Attribution 4.0 International License.
 \end{document}
