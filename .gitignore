@@ -3,7 +3,8 @@
 *.pdf
 *.aux
 *.log
-/intro-ssh-raspi-multiple.md
-/inventwithpython/
-/images - backups/
+Programming/intro-ssh-raspi-multiple.md
+Programming/inventwithpython/
+Programming/images - backups/
 *.out
+/Programming/advert/
