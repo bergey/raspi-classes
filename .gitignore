@@ -1,6 +1,6 @@
 *~
 \#*#
-*.pdf
+/Programming/*/*.pdf
 *.aux
 *.log
 Programming/intro-ssh-raspi-multiple.md
