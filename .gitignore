@@ -8,3 +8,4 @@ Programming/inventwithpython/
 Programming/images - backups/
 *.out
 /Programming/advert/
+.virtualenv/
