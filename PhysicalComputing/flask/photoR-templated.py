@@ -15,4 +15,4 @@ def photoR():
     return render_template("photoR.html", adc_raw=readadc(0))
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0")

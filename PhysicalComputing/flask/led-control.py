@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template
 
 # setup the LED output
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(13, GPIO.out)
+GPIO.setup(13, GPIO.OUT)
 
 app = Flask(__name__)
 
@@ -22,4 +22,4 @@ def led_off():
     return render_template("off.html")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0")
